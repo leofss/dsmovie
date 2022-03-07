@@ -1,8 +1,10 @@
 import App from "App";
+import Paginatios from "components/Paginatios";
 
 function Listing() {
     return(
-        <h1>Pagina de listagem</h1>
+        <Paginatios />
+        
     );
 }
 
