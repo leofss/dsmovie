@@ -1,4 +1,4 @@
-package com.devsup.dsmovie;
+package com.devsup.dsmovie.config;
 
 import java.util.Arrays;
 
