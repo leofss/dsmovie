@@ -11,8 +11,7 @@ public class Movie {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //tipos classe "Long" sempre maiusculo 
-    //pois trabalha com o banco de dados melhor
+
     private Long id;
     private String title;
     private Double score;
@@ -62,5 +61,9 @@ public class Movie {
     public void setImage(String image){
         this.image = image;
     }
+
+	public String getTitle() {
+		return title;
+	}
 
 }
