@@ -1,5 +1,5 @@
 import App from "App";
-import Paginatios from "components/Paginatios";
+import Paginations from "components/Paginatios";
 import MovieStars from "components/MovieStars";
 import MovieScores from "components/MovieScore";
 import MovieCard from "components/MovieCard";
@@ -33,9 +33,12 @@ function Listing() {
         });
     }, [pageNumber]);
 
+    const HandlePageChange = (NewPageNumber : number) => {
+        setPageNumber(NewPageNumber)
+    }
     return (
         <>
-            <Paginatios />
+            <Paginations page={page} onChange={HandlePageChange}/>
             <div className="container">
                 <div className="row">
                     {page.content.map(movie => (
